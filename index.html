@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang = "ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Zoo | Grădina zoologică</title>
+
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/12c29c871e.js"></script> 
+  </head>
+
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img src="images/logo2.png" alt="Zoo logo" class="nav__logo" style = "cursor: pointer;" onclick = "topFunction(), refreshPage()"/>
+        <ul class = "nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Animale</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Poze</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Despre noi</a>
+          </li>
+          <li class = "nav__item">
+            <a class = "nav__link nav__link--btn btn--show-program" href = "#">Program</a>            
+          </li>
+         <li class = "nav__item">
+            <div class="dropdown">
+              <button class="nav__link nav_link--btn media-btn">Social <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="https://www.facebook.com/mattia.iojica"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/mattia.iojica"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.twitter.com/mattia_iojica"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/mattia-iojica-306b7917a"><i class="fab fa-linkedin fa-2x"></i></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      
+      <div class="header__title">
+        <h1>Bine ați venit la<br/>
+          <span class="highlight" style="margin-left: 150px;">ZOO</span>
+        </h1>
+        <h4>"Leul e rege, dar jungla e mai mult decât un regat."</h4>
+        <button class="btn--text btn--scroll-to">More &DownArrow;</button>
+        <img src="images/coperta.png" class="header__img" alt = "coperta"/>
+      </div>
+      </header>
+
+
+      <section class="section" id="section--1">
+        <div class="section__title">
+          <h2 class="section__description">Animale</h2>
+          <h3 class="section__header">
+            "Viaţa unui animal e împărţită între a iubi şi a-i învăţa pe oameni să se iubească."
+          </h3>
+        </div>
+  
+        <div class="features">
+          <img src="images/giraffe.jpg" alt="Giraffe" style = "width: 100%; border-radius: 10px;"/>
+          <div class="features__feature">
+          <div class="features__icon">
+          </div>
+          <p>
+              Girafa este un mamifer si este cea mai înaltă din toate speciile de animale.
+              Masculii pot avea 4,8–5,5 m înălțime și o greutate de 900 kg.
+              Numele ei provine din arabă și înseamnă cea mai înaltă dintre toate.
+              Trăiește în savanele din Africa.
+          </p>
+          </div>
+  
+          <div class="features__feature">
+          <div class="features__icon"> </div>
+          <p>
+              Vulturul este numele comun dat mai multor păsări răpitoare diurne, mari, din familia accipitridae,
+              ordinul falconiformes, cu ciocul lung, ascuțit și coroiat, cu aripi lungi și cu picioare puternice,
+              cu gheare tari, care se hrănesc cu pradă vie și, uneori, cu stârvuri.
+          </p>
+          </div>
+  
+          <img src = "images/eagle.jpg" alt = "Eagle" style = "width: 100%; border-radius: 10px;"/>
+  
+          <img src = "images/panther.jpg" alt="Panther" style = "width: 100%; border-radius: 10px;"/>
+          <div class="features__feature">
+          <div class="features__icon">
+          </div>
+          <p>
+              Mai rar întălnită decât celelalte feline mari, pantera neagră nu este o specie aparte,
+              ci doar o variantă de culoare. Corpul ei este totuși acoperit de pete sub formă de rozete
+              (asemeni oricarui leopard) dar sunt mai puțin vizibile, datorită fundalului atât de închis la culoare.
+          </p>
+          </div>
+  
+          <div class="features__feature">
+          <div class="features__icon"> </div>
+              <p>
+                  Tigrul este o specie de mamifere carnivore din familia felidelor,
+                  fiind una dintre cele patru specii ale genului Panthera. Este cel mai mare reprezentant
+                  al subfamiliei Pantherinae și unul dintre cei mai mari răpitori tereștri.
+                  Dimensiunile unui tigru siberian la vârsta de 6 luni sunt comparabile cu cele ale unui leopard adult.
+              </p>
+              </div>
+          <img src = "images/tiger.jpg" alt = "Tiger" style = "width: 100%; border-radius: 10px;"/>
+        </div>
+      </section>
+
+    <div class="section" id="section--2">
+        <div class="slideshow-container">
+            <div class="mySlides">
+              <img  src='images/elephant.jpg' class = "image" alt="elephant"/>
+            </div>
+          
+            <div class="mySlides">
+              <img  src='images/flamingo.jpg' class = "image" alt="flamingo"/>
+            </div>
+          
+            <div class="mySlides">
+              <img  src='images/moose.jpg' class = "image" alt="moose"/>
+            </div>
+          
+            <div class="mySlides">
+              <img  src='images/parrot.jpg' class = "image" alt="parrot"/>
+            </div>
+      
+            <div class="mySlides">
+              <img  src='images/peacock.jpg' class = "image" alt="peacock"/>
+            </div>
+            <div class="mySlides">
+              <img  src='images/monkey.jpg' class = "image" alt="monkey"/>
+            </div>
+          
+          
+            <div class="prev" onclick='plusSlides(-1)'>&#10094;</div>
+            <div class="next" onclick='plusSlides(1)'>&#10095;</div>
+        </div>
+          <br/>
+          
+          
+          <div style='text-align: center;'>
+            <span class="dot span2" onclick='currentSlide(1)'></span>
+            <span class="dot span2" onclick='currentSlide(2)'></span>
+            <span class="dot span2" onclick='currentSlide(3)'></span>
+            <span class="dot span2" onclick='currentSlide(4)'></span>
+            <span class="dot span2" onclick='currentSlide(5)'></span>
+            <span class="dot span2" onclick='currentSlide(6)'></span>
+          </div>
+          
+      
+      
+          <script>window.onloan = showSlides();</script>
+
+
+        </div>
+
+      <section class="section" id="section--3">
+        <div class="section__title">
+          <h2 class="section__description">Despre noi</h2>
+          <h3 class="section__header">
+            A fi împreună este un început, a rămâne împreună este un progres, a lucra împreună este un succes.
+          </h3>
+        </div>
+  
+        <div class="operations">
+          <div class="operations__tab-container">
+            <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">Vizită</button>
+            <button class="btn operations__tab operations__tab--2" data-tab="2">Experiență</button>
+            <button class="btn operations__tab operations__tab--3" data-tab="3">Contact</button>
+          </div>
+          <div
+            class="operations__content operations__content--1 operations__content--active"
+          >
+            <div class="operations__icon operations__icon--1">
+            </div>
+            <h5 class="operations__header">
+              Desfășurarea vizitei in contextul pandemiei COVID-19
+            </h5>
+            <p>
+              Pe parcursul vizitei, este obligatorie purtarea măștii de protecție atât pentru siguranța dumneavoastră, cât și a celor din jurul vostru.<br/>
+              Este interzisă vizita în grupuri mai mari de 4 persoane.<br/>
+              Respectați măsurile de distanțare socială.
+            </p>
+          </div>
+  
+          <div class="operations__content operations__content--2">
+            <div class="operations__icon operations__icon--2">
+            </div>
+            <h5 class="operations__header">
+              Bazele unui Zoo de succes
+            </h5>
+            <p>
+              În urma celor 5 ani de activitate și a zecilor de mii de turiști ce au trecut prin gradina noastră, am realizat că 
+              oamenii cu care lucrezi au un rol foarte important în ceea ce faci.
+
+            </p>
+          </div>
+
+          <div class="operations__content operations__content--3">
+            <div class="operations__icon operations__icon--3">
+            </div>
+            <h5 class="operations__header">
+              Dacă dorești să faci parte din echipa noastră?
+            </h5>
+            <p>
+              Trimite un mail cu CV-ul tău la adresa angajare@zooproiect.com
+              și te vom contacta noi înapoi!
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="section" id="section--4">
+        <div class="section__title section__title--testimonials">
+          <h2 class="section__description">Nu ești încă sigur?</h2>
+          <h3 class="section__header">
+            Mii de turiști au trecut până acum prin grădina noastră zoologică și nu au regretat!
+          </h3>
+        </div>
+
+        <div>
+          <blockquote class = "testimonial__text">
+            Încă de când am început acest proiect, am știut că oamenilor le va plăcea. Este ceva unic în orașul nostru și reprezintă una 
+            dintre atracțiile principale când vine vorba de el. Suntem bucuroși că trăim pe lângă animale și că putem aduce un zâmbet pe 
+            fețele celor ce ne vizitează.
+          </blockquote>
+          <br/>
+          <div class="testimonial__author">
+            <img src="images/manager.jpg" alt="" class= "testimonial__photo"/>
+            <h6 class="testimonial__name">Victor Pop </h6>
+            <p class = "testimonial__job">Manager of the ZOO</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section section--before-footer">
+        <div class="section__title">
+          <h3 class="section__header">
+            Dacă ai vizitat grădina noastră zoologică și ți-a plăcut sau ai ceva să ne zici
+          </h3>
+        </div>
+        <button class="btn btn--show-modal">Lasă-ne feedback!</button>
+      </section>
+
+
+  
+      <footer class="footer">
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a class="footer__link" href= "https://www.facebook.com/mattia.iojica"><i class="fab fa-facebook fa-2x"></i></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href= "https://www.instagram.com/mattia.iojica"><i class="fab fa-instagram fa-2x"></i></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href= "https://www.twitter.com/mattia_iojica"><i class="fab fa-twitter fa-2x"></i></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href= "https://www.linkedin.com/in/mattia-iojica-306b7917a"><i class="fab fa-linkedin fa-2x"></i></a>
+          </li>
+        </ul>
+        <img src="images/logo2.png" alt="Logo" class="footer__logo" style = "cursor: pointer;" onclick = "topFunction(), refreshPage()" />
+      </footer>
+  
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+          Lăsa-ne un scurt feedback <br />
+          Durează doar <span class="highlight2">2 minute</span>
+        </h2>
+        <form class="modal__form">
+          <label>Nume</label>
+          <input>
+          <label>Prenume</label>
+          <input>
+          <label>Email Address</label>
+          <input>
+          <label >Feedback</label>
+          <input>
+          <button class="btn" onclick ="closeModal(),topFunction()" >Send &rarr;</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+
+
+      <div class ="program hidden">
+        <button class = "btn--close-program">&times;</button>
+        <h2 class="program__header">
+           <span class="highlight prg">Program</span>
+        </h2>
+          <h2 class = "program__text">Luni-Vineri: 9:00 - 19:30 </h2>
+          <h2 class = "program__text">Weekend: 10:00 - 20:00</h2>
+        <br/>
+        <br/>
+        <div class = "program__header">
+          <span class = "highlight prg" style = "font-size: 30px; font-weight: 500;">Prețuri</span><br/>
+          <h2 class = "program__text">Copii &lt; 8 ani: Gratuit </h2>
+          <h2 class = "program__text">Copii > 8 ani: 8lei </h2>
+          <h2 class = "program__text">Elevi/Studenți/Pensionari: 10lei </h2>
+          <h2 class = "program__text">Adulți: 15lei</h2>
+        </div>
+      </div>
+      <div class = "overlay hidden"></div>
+
+
+  </body>
